@@ -35,3 +35,5 @@ def convert_fahrenheit() -> float:
     celsius = float(input("Celsius: "))
     fahrenheit = celsius * 9.0 / 5 + 32
     return fahrenheit
+
+main()
