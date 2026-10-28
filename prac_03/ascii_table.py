@@ -7,10 +7,16 @@ def valid_ascii(prompt):
         print("The input is wrong, please input again")
         value = int(input(prompt))
     return value
-
+columns=int(input("How many columns do u want: "))
+count=0
 for i in range(LOWER, UPPER + 1):
-    print(f"{i} {chr(i)}")
-
+    count+=1
+    if count !=columns:
+        print(f"{i:>3} {chr(i)}",end="   ")
+    else:
+        print(f"{i:>3} {chr(i)} ")
+        count=0
+print()
 character = input("Enter a character: ")
 while len(character) != 1 or not LOWER <= ord(character) <= UPPER:
     print("Please enter one character within the ASCII range.")
