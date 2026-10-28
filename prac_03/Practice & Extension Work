@@ -1,0 +1,5 @@
+1. result= bool(random.randint(0,1))
+result=random.choice([True, False])
+result=random.random()<0.5
+
+2. MAX_INCREASE=random.uniform(0.5, 1.0)
